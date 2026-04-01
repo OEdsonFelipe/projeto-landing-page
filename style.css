@@ -1,0 +1,91 @@
+body {
+    /* O caminho deve apontar para onde sua imagem está */
+    background-image: url('/imagens/background.jpg');
+    
+    /* Configurações para cobrir a tela inteira */
+    background-size: cover;           /* Redimensiona a imagem para preencher tudo */
+    background-position: center;      /* Centraliza a imagem */
+    background-repeat: no-repeat;    /* Impede que a imagem se repita */
+    background-attachment: fixed;     /* Efeito fixo ao rolar a página */
+    
+    /* Garante que o corpo tenha altura suficiente */
+    min-height: 100vh;
+    margin: 0;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+    background-color: #f4f4f9; /* Cor de fundo leve */
+    min-height: 80vh; /* Ocupa quase a tela toda */
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #285A48;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px; /* Bordas arredondadas para estilo moderno */
+}
+
+/* Estilo Geral do Menu */
+.menu-principal {
+    background-color: #333; /* Cor escura profissional */
+    padding: 15px 10%;
+    color: white;
+}
+
+.menu-principal nav {
+    display: flex;
+    justify-content: space-between; /* Logo na esquerda, links na direita */
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff; /* Cor de destaque */
+}
+
+.nav-links {
+    list-style: none; /* Tira as bolinhas da lista */
+    display: flex;
+    gap: 20px; /* Espaço entre os links */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none; /* Tira o sublinhado */
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #007bff; /* Cor muda ao passar o mouse */
+}
